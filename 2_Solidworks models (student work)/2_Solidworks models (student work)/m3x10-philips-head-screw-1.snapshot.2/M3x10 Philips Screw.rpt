@@ -1,0 +1,66 @@
+*****************************************************************
+      SolidWorks Corporation - IGES Processor Status Report
+*****************************************************************
+=================================================================
+General Information
+=================================================================
+Sending System Product I.D.  : M3x10 Philips Screw
+Receiving System Product I.D.: M3x10 Philips Screw
+File Name                    : M3x10 Philips Screw.igs
+Sending System               : DASSAULT SYSTEMES CATIA V5 R20 - www.3ds.com
+Preprocessor Version         : CATIA Version 5 Release 20 SP 1 
+File Creation Date           : 20180415.202643
+Model Creation Date          : 20180415.202643
+Units                        : MM
+Model Space Scale            : 1
+Author                       : Erik
+Organization                 : GAMING_PC
+
+
+=================================================================
+Entity Processing Information
+=================================================================
+
+
+=================================================================
+Precision analysis of IGES file:
+=================================================================
+  Most prevalent number of significant digits:              10
+  Highest number of significant digits:                     10
+  Average number of significant digits:                8.20463
+  Maximum distance to origin:                          10.9445
+  Minimum distance to origin:                                0
+  Effective number of significant digits:                   10
+
+
+=================================================================
+Entity Summary
+=================================================================
+-----------------------------------------------------------------
+Type Name                                         Count Converted
+---- ----                                         ----- ---------
+100  Arc                                            102       102
+102  Composite curve                                414       414
+108  Plane                                           16        16
+110  Line                                           776       776
+120  Surface of revolution                           63        63
+124  Transformation matrix                          102       102
+126  Rational B-spline curve                       1065      1065
+128  Rational B-spline surface                      162       162
+142  Curve on a parametric surface                  252       252
+144  Trimmed parametric surface                     251       251
+_________________________________________________________________
+
+
+=================================================================
+Result Summary
+=================================================================
+SolidWorks Feature Type                Count
+-----------------------                -----
+Solid feature(s)                       1
+Surface feature(s)                     0
+Curve/Sketch feature(s)                0
+--------------------------------------------
+Start time: péntek, augusztus 24, 2018 09:41:15
+Finish time: péntek, augusztus 24, 2018 09:41:23
+Processing time: 0 days, 00 hours, 00 mins, 08 secs

@@ -1,0 +1,47 @@
+[System]
+Name='FLC3_sa'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='min'
+OrMethod='max'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='epsi'
+Range=[-45 45]
+NumMFs=3
+MF1='N':'trimf',[-45000000000 -45 0]
+MF2='Z':'trimf',[-45 0 45]
+MF3='P':'trimf',[0 45 45000000000]
+
+[Input2]
+Name='exi'
+Range=[-96.2 96.2]
+NumMFs=3
+MF1='N':'trimf',[-96200000000 -96.2 0]
+MF2='Z':'trimf',[-96.2 0 96.2]
+MF3='P':'trimf',[0 96.2 96200000000]
+
+[Output1]
+Name='upsi'
+Range=[0 1]
+NumMFs=3
+MF1='N':'constant',[-8]
+MF2='Z':'constant',[0]
+MF3='P':'constant',[8]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 1 (1) : 1
+1 3, 2 (1) : 1
+2 1, 1 (1) : 1
+2 2, 2 (1) : 1
+2 3, 3 (1) : 1
+3 1, 2 (1) : 1
+3 2, 3 (1) : 1
+3 3, 3 (1) : 1

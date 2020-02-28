@@ -1,0 +1,47 @@
+[System]
+Name='FLC1_sa'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='min'
+OrMethod='max'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='es'
+Range=[-0.16 0.16]
+NumMFs=3
+MF1='N':'trimf',[-160000000 -0.16 0]
+MF2='Z':'trimf',[-0.16 0 0.16]
+MF3='P':'trimf',[0 0.16 160000000]
+
+[Input2]
+Name='ev'
+Range=[-0.28 0.28]
+NumMFs=3
+MF1='N':'trimf',[-280000000 -0.28 0]
+MF2='Z':'trimf',[-0.28 0 0.28]
+MF3='P':'trimf',[0 0.28 280000000]
+
+[Output1]
+Name='us'
+Range=[0 1]
+NumMFs=3
+MF1='N':'constant',[-9.8]
+MF2='Z':'constant',[0]
+MF3='P':'constant',[9.8]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 1 (1) : 1
+1 3, 2 (1) : 1
+2 1, 1 (1) : 1
+2 2, 2 (1) : 1
+2 3, 3 (1) : 1
+3 1, 2 (1) : 1
+3 2, 3 (1) : 1
+3 3, 3 (1) : 1
